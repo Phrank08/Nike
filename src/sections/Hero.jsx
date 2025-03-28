@@ -1,7 +1,8 @@
 import Button from '../components/Button';
 import { arrowRight } from '../assets/icons';
-import { statistics } from '../constants';
+import { shoes, statistics } from '../constants';
 import { bigShoe1 } from '../assets/images';
+import ShoeCard from '../components/ShoeCard';
 
 const Hero = () => {
   return (
@@ -13,7 +14,7 @@ const Hero = () => {
         <p className="text-xl font-montserrat text-coral-red">Our Summer Collection</p>
 
         <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82] font-bold">
-          <span  className="xl:bg-white xl:whitespace-nowrap relative z-index pr-10">The New Arrival</span>
+          <span  className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">The New Arrival</span>
           <br />
           <span className="text-coral-red inline-block mt-3">Nike</span> Shoes
         </h1>
@@ -31,13 +32,22 @@ const Hero = () => {
       </div>
         
 
-      <div className="flex flex-1 justify-center">
+      <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
         <img 
         src={bigShoe1} 
         alt="Shoe Collection" 
         width={610}
         height={500}
         className="object-contain relative z-10"/>
+
+        <div>
+          {shoes.map((shoe) => (
+            <div key={shoe}>
+              <ShoeCard/> 
+
+            </div>
+          ))}
+        </div>
 
       </div>
     </section>
