@@ -10,10 +10,11 @@ const Hero = () => {
       <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
 
         <p className="text-xl font-montserrat text-coral-red">Our Summer Collection</p>
+
         <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82] font-bold">
-          <span  className="xl:bg-white xl:whitespace-nowrap relative z-index">The New Arrival</span>
+          <span  className="xl:bg-white xl:whitespace-nowrap relative z-index pr-10">The New Arrival</span>
           <br />
-          <span>Nike</span>
+          <span className="text-coral-red inline-block mt-3">Nike</span>
           Shoes
         </h1>
         <p>Discover stylish Nike arrivals, quality comfort, and innovation for your active life.</p>
