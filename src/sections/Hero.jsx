@@ -1,6 +1,7 @@
 import Button from '../components/Button';
 import { arrowRight } from '../assets/icons';
 import { statistics } from '../constants';
+import { bigShoe1 } from '../assets/images';
 
 const Hero = () => {
   return (
@@ -30,6 +31,15 @@ const Hero = () => {
       </div>
         
 
+      <div className="flex flex-1 justify-center">
+        <img 
+        src={bigShoe1} 
+        alt="Shoe Collection" 
+        width={610}
+        height={500}
+        className="object-contain relative z-10"/>
+
+      </div>
     </section>
   )
 }
